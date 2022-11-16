@@ -49,17 +49,7 @@ class Disco (Componentes):
     def obtenerTipo(self) -> str:
         return "Disco"
 
-class Placa_M (Componentes):
-    
-    def __init__(self, nombre, marca, precio, car) -> None:
-        super().__init__(nombre, marca, precio)
-        self.car = car
 
-    def obtenerEsp (self) -> str:
-        return "ATX: " + self.car
-
-    def obtenerTipo(self) -> str:
-        return "Placa Madre"
 
 class PSU (Componentes):
     
@@ -73,38 +63,4 @@ class PSU (Componentes):
     def obtenerTipo(self) -> str:
         return "PSU"
 
-class Monitor (Componentes):
-    
-    def __init__(self, nombre, marca, precio, car) -> None:
-        super().__init__(nombre, marca, precio)
-        self.car = car
 
-    def obtenerEsp (self) -> str:
-        return "FPS: " + self.car
-
-    def obtenerTipo(self) -> str:
-        return "Monitor"
-
-class Teclado (Componentes):
-    
-    def __init__(self, nombre, marca, precio, car) -> None:
-        super().__init__(nombre, marca, precio)
-        self.car = car
-
-    def obtenerEsp (self) -> str:
-        return "Numero de Pulsaciones: " + self.car
-
-    def obtenerTipo(self) -> str:
-        return "Teclado"
-
-class Raton (Componentes):
-    
-    def __init__(self, nombre, marca, precio, car) -> None:
-        super().__init__(nombre, marca, precio)
-        self.car = car
-
-    def obtenerEsp (self) -> str:
-        return "DPI: " + self.car
-
-    def obtenerTipo(self) -> str:
-        return "Raton"
