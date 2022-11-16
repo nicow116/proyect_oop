@@ -44,16 +44,10 @@ class Buscador:
                              componentes.append(Disco (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
                         case "GPU":
                             componentes.append(GPU (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                        case "Placa Madre":
-                            componentes.append(Placa_M (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
+                    
                         case "PSU":
                             componentes.append(PSU (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                        case "Monitor":
-                            componentes.append(Monitor (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                        case "Teclado":         
-                            componentes.append(Teclado (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                        case "Raton":
-                            componentes.append(Raton (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
+                        
 
                     
                     #Buscar coincidencias
@@ -78,7 +72,7 @@ class Buscador:
         archivo.close()
 
 
-    def buscarComponente (self, cat, criterio):
+def buscarComponente (self, cat, criterio):
         #Acceder a Base de Datos y buscar
         archivo = open ("archivos/componentes.csv", "r")
         self.computador = []
@@ -126,72 +120,11 @@ class Buscador:
                         self.componentes.append(Disco (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
                     case "GPU":
                         self.componentes.append(GPU (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Placa Madre":
-                        self.componentes.append(Placa_M (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
+                
                     case "PSU":
                         self.componentes.append(PSU (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Monitor":
-                        self.componentes.append(Monitor (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Teclado":         
-                        self.componentes.append(Teclado (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Raton":
-                        self.componentes.append(Raton (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
+                   
 
-    def buscarComponente (self, cat, criterio):
-        #Acceder a Base de Datos y buscar
-        archivo = open ("archivos/componentes.csv", "r")
-        self.computador = []
-
-        for lineas in archivo:
-            coincide = False
-            col = lineas.split(";")
-            
-
-            #Leer marca, nombre y precio
-            marca_comp = col[1]
-            nombre_comp = col[2]
-            precio_comp = int(col[3])
-            car_comp = col[4]
-            comp = col[0]
-
-            match (cat):
-                case "marca":
-                    if (marca_comp == criterio):
-                        coincide = True
-                case "nombre":
-                    if (nombre_comp == criterio):
-                        coincide = True
-                case "precio":
-                    if (precio_comp <= int(criterio)):
-                        coincide = True
-                case "tipo":
-                    if (comp == criterio):
-                        coincide = True
-                case "":
-                    coincide = True
+    
 
 
-            #Leer el tipo de componente
-            if (coincide):
-                match comp:
-                    # aqui los instancia como una clase en espesifico segun su tipo 
-                    case "RAM":
-                        
-                        self.componentes.append(RAM (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Procesador":
-                    
-                        self.componentes.append(Procesador (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Disco":
-                        self.componentes.append(Disco (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "GPU":
-                        self.componentes.append(GPU (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Placa Madre":
-                        self.componentes.append(Placa_M (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "PSU":
-                        self.componentes.append(PSU (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Monitor":
-                        self.componentes.append(Monitor (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Teclado":         
-                        self.componentes.append(Teclado (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
-                    case "Raton":
-                        self.componentes.append(Raton (nombre = nombre_comp, marca = marca_comp, precio = precio_comp, car = car_comp))
