@@ -1,0 +1,10 @@
+RAM Intel MemoriaSuper 12000 4GB
+RAM AMD MemoriaSuper 12000 4GB
+RAM Samsung MemoriaSuper 12000 4GB
+RAM RodriComp MemoriaSuper 12000 4GB
+RAM Ryzen MemoriaSuper 12000 4GB
+Procesador Intel i7_8665U 6066 1.90GHz
+Procesador Intel i7_8650U 6067 1.90GHz
+Procesador Intel i5_10210U 6570 1.60GHz
+Procesador Intel i7_6700HQ 6579 1.60GHz
+Procesador Intel i3_4700HQ 6579 1.50GHz

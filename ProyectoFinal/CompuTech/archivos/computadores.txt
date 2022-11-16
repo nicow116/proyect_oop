@@ -1,0 +1,9 @@
+Computador
+    ID:1000
+    Nombre:AllinOne
+    Marca:HP
+    Precio:10000
+    Componentes
+        RAM Intel MemoriaSuper 12000 4GB
+    /Componentes
+/Computador
